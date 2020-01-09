@@ -45,6 +45,7 @@ on is free or requires special access or valid subscription or product license.
     * [Hippocampe](#hippocampe)
     * [HybridAnalysis](#hybridanalysis)
     * [Hunterio_DomainSearch](#hunterio_domainSearch)
+    * [Ldap_Query](#ldap_query)
     * [MaxMind](#maxmind)
     * [MISP](#misp)
     * [MISP Warninglists](#misp-warninglists)
@@ -358,6 +359,13 @@ This analyzer comes in only one flavor called *Hunterio_DomainSearch*.
 You need to have or create a free Hunter.io [account](https://hunter.io/). 
 
 Provide the [API key](https://hunter.io/api_keys) as a value for the `key` parameter.
+
+### Ldap_Query
+Query a LDAP server to get desired user attributes values.
+
+#### Requirements
+Provide connection details (server address, credentials), the base DN of your LDAP, and a list of attributes you want to fetch from the LDAP Server.  
+You may also need to modify the "long.html" report template to add the attributes you inserted in your list.
 
 ### MaxMind
 Geolocate an IP Address via [MaxMind](https://www.maxmind.com/en/home)
